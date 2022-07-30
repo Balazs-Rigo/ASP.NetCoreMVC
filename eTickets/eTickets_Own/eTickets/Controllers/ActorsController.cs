@@ -14,8 +14,8 @@ namespace eTickets.Controllers
         }
         public IActionResult Index()
         {
-            var date = _context.Actors.ToList();
-            return View();
+            var data = _context.Actors.ToList();
+            return View(data);
         }
     }
 }
