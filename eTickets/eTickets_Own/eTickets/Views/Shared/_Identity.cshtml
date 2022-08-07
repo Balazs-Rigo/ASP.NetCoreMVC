@@ -1,4 +1,4 @@
-﻿@*@inject UserManager<ApplicationUser> UserManager; *@
+﻿@inject UserManager<ApplicationUser> UserManager; 
 
 @if (!User.Identity.IsAuthenticated)
 {
@@ -18,7 +18,7 @@ else
     <div class="dropdown">
         <button class="btn btn-outline-success dropdown-toggle" type="button" id="profile-btn" data-toggle="dropdown"
                 aria-expanded="false">
-            @*<i class="bi bi-person-badge"></i> Hello @UserManager.GetUserName(User)*@
+            <i class="bi bi-person-badge"></i> Hello @UserManager.GetUserName(User)
         </button>
         <ul class="dropdown-menu" aria-labelledby="profile-btn">
             <li>
