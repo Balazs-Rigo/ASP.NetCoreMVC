@@ -2,7 +2,7 @@
 $(document).ready(function () {
     $("#appointmentDate").kendoDateTimePicker({
         value: new Date(),
-        dateInput: false
+        dateInput: false,
     });
 
     InitializeCalendar();
